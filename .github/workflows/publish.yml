@@ -23,6 +23,6 @@ jobs:
         with:
           apiToken: cdtsnPxe4r8JNM1_e2d59oYoCkKPrDGL6FWpufQX
           accountId: d5e572ca2ba04352a0f46d3be80fd12f
-          projectName: DEPLOYMENT_ANALYSIS-2
+          projectName: deployment-analysis-2
           directory: build
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}

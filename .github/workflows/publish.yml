@@ -10,8 +10,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Build
-        run: npm run build
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - run: npm ci
+      - run: npm run build --if-present
       # Run a build step here if your project requires
 
       - name: Publish to Cloudflare Pages

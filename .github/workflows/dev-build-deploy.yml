@@ -25,7 +25,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-1
+          aws-region: eu-west-2
 
       - name: Deploy to S3 bucket
-        run: aws s3 sync ./build/ s3://react-cors-spa-EPAO6YW0MYHWT --delete
+        run: aws s3 sync ./build/ s3://react-cors-spa-4xr8y439ce --delete

@@ -4,7 +4,7 @@ name: dev-build-and-deploy
 on:
   push:
     branches:
-      - dev
+      - new-branch
 jobs:
   # To build the project
   build-app-cf:

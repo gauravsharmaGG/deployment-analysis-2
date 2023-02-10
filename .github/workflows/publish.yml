@@ -33,6 +33,7 @@ jobs:
             |<span aria-hidden="true">🔍</span> Latestly deploy log | ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} |
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@1
+        id: cloudflare
         with:
           apiToken: cdtsnPxe4r8JNM1_e2d59oYoCkKPrDGL6FWpufQX
           accountId: d5e572ca2ba04352a0f46d3be80fd12f

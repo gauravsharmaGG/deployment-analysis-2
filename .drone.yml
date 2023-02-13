@@ -9,3 +9,4 @@ steps:
         who-to-greet: Mona the Octocat
     env:
         hello: world
+    CF_PAGES_SITE_DIR: $CF_PAGES_SITE_DIR

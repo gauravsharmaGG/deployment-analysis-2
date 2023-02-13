@@ -9,4 +9,7 @@ steps:
         who-to-greet: Mona the Octocat
       env:
         hello: world
-        CF_PAGES_SITE_DIR: $CF_PAGES_SITE_DIR
+        CF_PAGES_SITE_DIR:
+          from_secret: CF_PAGES_SITE_DIR
+        CLOUDFLARE_API_TOKEN:
+          from_secret: CLOUDFLARE_API_TOKEN

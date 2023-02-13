@@ -2,18 +2,12 @@ kind: pipeline
 type: docker
 steps:
   - name: publish-to-cloudflare
-    image: gauravsh0112/cfpages-react:version2.2
+    image: gauravsh0112/cfpages-react:version2.3
     settings:
       uses: .github/workflows/publish
       CF_PAGES_SITE_DIR:
         from_secret: CF_PAGES_SITE_DIR
       CLOUDFLARE_API_TOKEN:
         from_secret: CLOUDFLARE_API_TOKEN
-      with:
-        who-to-greet: Mona the Octocat
-      env:
-        hello: world
-        CF_PAGES_SITE_DIR:
-          from_secret: CF_PAGES_SITE_DIR
-        CLOUDFLARE_API_TOKEN:
-          from_secret: CLOUDFLARE_API_TOKEN
+      PROJECT_NAME:
+        from_secret: PROJECT_NAME

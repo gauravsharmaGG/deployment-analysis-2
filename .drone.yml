@@ -2,7 +2,7 @@ kind: pipeline
 type: docker
 name: default
 steps:
-  - name: dronetest
+  - name: dronetesd
     image: node
     commands:
       npm install

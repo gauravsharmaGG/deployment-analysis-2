@@ -1,11 +1,14 @@
 kind: pipeline
 type: docker
+name: greeting
+
 steps:
-- name: github-action
-  image: plugins/github-actions
-  settings:
-    uses: .github/workflows/publish
-    with:
-        who-to-greet: Mona the Octocat
-    env:
-        hello: world
+- name: en
+  image: alpine
+  commands:
+  - echo hello world
+
+- name: fr
+  image: alpine
+  commands:
+  - echo bonjour monde

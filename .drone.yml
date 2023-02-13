@@ -2,7 +2,7 @@ kind: pipeline
 type: docker
 steps:
 - name: publish-to-cloudflare
-  image: gauravsh0112/cfpages-react:version1.4
+  image: gauravsh0112/cfpages-react:version1.5
   settings:
     uses: .github/workflows/publish
     with:

@@ -1,12 +1,12 @@
 kind: pipeline
 type: docker
 steps:
-- name: publish-to-cloudflare
-  image: gauravsh0112/cfpages-react:version2.1
-  settings:
-    uses: .github/workflows/publish
-    with:
+  - name: publish-to-cloudflare
+    image: gauravsh0112/cfpages-react:version2.1
+    settings:
+      uses: .github/workflows/publish
+      with:
         who-to-greet: Mona the Octocat
-    env:
+      env:
         hello: world
         CF_PAGES_SITE_DIR: $CF_PAGES_SITE_DIR

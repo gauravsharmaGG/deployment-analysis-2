@@ -1,9 +1,9 @@
+kind: pipeline
+type: docker
+name: default
 steps:
-- name: github-action
-  image: plugins/github-actions
-  settings:
-    uses: actions/publish
-    with:
-        who-to-greet: Mona the Octocat
-    env:
-        hello: world
+  - name: dronetest
+    image: node
+    commands:
+      npm install
+      npm test

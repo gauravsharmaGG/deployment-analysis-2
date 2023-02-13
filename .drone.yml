@@ -1,3 +1,5 @@
+kind: pipeline
+type: docker
 steps:
 - name: github-action
   image: plugins/github-actions

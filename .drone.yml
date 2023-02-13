@@ -1,8 +1,9 @@
-kind: pipeline
-type: docker
-name: default
 steps:
-  - name: dronetesd
-    image: node
-    commands:
-      npm install
+- name: github-action
+  image: plugins/github-actions
+  settings:
+    uses: .github/workflows/publish
+    with:
+        who-to-greet: Mona the Octocat
+    env:
+        hello: world

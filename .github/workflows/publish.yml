@@ -32,7 +32,7 @@ jobs:
             |<span aria-hidden="true">🔨</span> Latest commit | ${{ github.sha }} |
             |<span aria-hidden="true">🔍</span> Latestly deploy log | ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} |
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/pages-action@v1.3.0
         id: cloudflare
         with:
           apiToken: cdtsnPxe4r8JNM1_e2d59oYoCkKPrDGL6FWpufQX

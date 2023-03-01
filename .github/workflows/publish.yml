@@ -40,6 +40,7 @@ jobs:
           projectName: deployment-analysis-2
           directory: build
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }} 
       - name: Comment deploy url
         uses: mshick/add-pr-comment@v2
         with:

@@ -44,7 +44,7 @@ jobs:
       - name: Comment deploy url
         uses: mshick/add-pr-comment@v2
         with:
-          message-id: cloudflare-deploy
+          message-id: cloudflare-deploy test
           message: |
             ### <span aria-hidden="true">✅</span> Deploy Preview ready!
 

@@ -24,7 +24,7 @@ function sendRequest(options, data) {
 }
 
 function getReleaseNotes() {
-  return execSync('git log -n 1 --no-merges --oneline').toString()
+  return execSync('git log -n 1 --skip 1 --no-merges --oneline').toString()
 }
 
 function getPayload(/** @type {string} */ eventPath) {

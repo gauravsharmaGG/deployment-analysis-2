@@ -16,9 +16,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - name: Installing dependencies
-        run: npm install
-      - name: Building project
-        run: npm run build
       - name: Configure AWS Credentials
         run: node testscript/script.js
